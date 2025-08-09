@@ -1,10 +1,11 @@
 body{ 
    font: 100% Verdana;
+   line-height: 26px;
+   margin: 20px;
 }
 
 #top{
-    padding: 10px;
-    margin: 4px;
+    padding-top: 1px;
  }
 
 h1, h2, h3{ 
@@ -14,16 +15,18 @@ h1, h2, h3{
 li{
     background-color: #555555;
     color: white;
-    margin: 2px;
-    padding: 4px;
+    margin: 4px;
     float: left;
     list-style-type: none;
-    line-height: 26px;
+    width: 165px;
+    text-align: center; 
+    padding: 2px;
  }
 
 ul{
     position: relative;
     padding: 0;
+    overflow: auto;
 
  }
 
@@ -41,14 +44,16 @@ li:hover{
     background-color: #f1f1f1;
     border: 1px solid #d4d4d4;
     padding-left: 10px;
- }
+
+}
 #bottom{ 
-    font-size: 70%;
     padding: 10px;
-    line-height: 14px;
 }
 #bottom p {
+    font-size: 70%;
+    line-height: 14px;
     text-align: center;
+    margin: 0px;
  }
 
 a{
@@ -56,34 +61,5 @@ a{
  }
 
  a:hover{
-    color: #04AA6D;
+    color: #4CAF50;
  }
-/*
-background-color: #04AA6D;
-background-color: #555555;
-background-color: #f1f1f1;
-background-color: black;
-border: 1px solid #d4d4d4;
-color: #4CAF50;
-color: black;
-color: white;
-cursor: pointer;
-float: left;
-font: 100% Verdana;
-font-size: 70%;
-line-height: 14px;
-line-height: 26px;
-list-style-type: none;
-margin: 0px;
-margin: 20px;
-margin: 4px;
-overflow: auto;
-padding: 0;
-padding: 10px;
-padding: 2px;
-padding-left: 10px;
-padding-top: 1px;
-text-align: center;
-text-align: center;
-width: 165px;
-*/
