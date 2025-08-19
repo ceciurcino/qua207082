@@ -11,34 +11,74 @@
             text-decoration: none;
             border: none;
          }
+
          body {
             font: 100% Arial;
          }
+
         header{
             background-color: gray;
             color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0px 30px;
+            padding: 5px 30px;
         }
 
-        
+        nav a {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            margin: 0px 2px;
+        }
+
+        #principal{
+            display: flex;
+        }
+
+        #principal div {
+            width: 50%;
+            margin: 30px;
+        }
+
+        #principal h2{
+            font-size: 200%;
+        }
+
+        #principal p{
+            margin-top: 20px;
+            font-size: 90%;
+        }
+
+        #principal button{
+            padding: 20px;
+            margin: 30px 0px;
+            width: 300px;
+            background-color: rgb(202, 202, 202);
+            border: 2px solid gray;
+            font-weight: bold;
+        }
+
+        #principal iframe {
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 </head>
 <body>
      <header>
         <h1>Logo</h1>
         <nav>
-            <a href="#"><img src="Facebook_logo_(square).png" alt="logo-facebook" width="25" height="25"></a>
-            <a href="#"><img src="twitter.jpg" alt="logo-twitter" width="25" height="25"></a>
+            <a href="#">A</a>
+            <a href="#">B</a>
             <a href="#">C</a>
             <a href="#">D</a>
         </nav>
     </header>
     <section id="principal">
         <div>
-        <h1>Lorem Ipsum Dolor Sit Amet</h1>
+        <h2>Lorem Ipsum Dolor Sit Amet</h2>
         <p>Lorem ipsum dolor sit amet, consectetur 
            adipisci elit, sed eiusmod tempor 
            incidunt ut labore et dolore magna aliqua.
@@ -46,12 +86,8 @@
         <button>CTA Button</button>
         </div>
         <div>
-        <video width="320" height="240" controls></video>
+            <iframe src="https://www.youtube.com/embed/tNobiwuAaAg?si=tXeR0bR3h2F9lvct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </section>
-    <hr>
-    <section>
-
     </section>
 </body>
 </html>
