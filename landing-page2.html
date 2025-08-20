@@ -79,7 +79,7 @@
         }
 
         .noticia {
-            width: 400px;
+            width: 270px;
             margin: 30px;
         }
         
@@ -101,6 +101,48 @@
 
         .noticia p {
             margin-top: 5px;
+        }
+
+        #depoimentos{
+            display: flex;
+        }
+
+        .depoimento {
+            width: 50%;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .foto {
+            background-color: gray;
+            width: 140px;
+            height: 140px;
+            float: left;
+            margin: 15px;
+        }
+
+        footer {
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        body {
+            width: 1000px;
+            margin: auto;
+            border: 2px solid gray;
+            background-color: white;
+        }
+
+        html {
+            background-color: #dedede;
+        }
+
+        hr {
+            border: 1px solid #c2c2c2;
+            width: 80%;
+            margin: auto;
         }
     </style>
 </head>
@@ -127,12 +169,14 @@
             <iframe src="https://www.youtube.com/embed/tNobiwuAaAg?si=tXeR0bR3h2F9lvct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
+    <hr>
     <section id="carrossel">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
     </section>
+    <hr>
     <section id="noticias">
         <div class="noticia">
             <div>1</div>
@@ -165,6 +209,23 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor. </p>
         </div>
     </section>
-    
+    <hr>
+    <section id="depoimentos">
+        <div class="depoimento">
+            <div class="foto"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor. <br>
+                - Lorem Ipsum
+            </p>
+        </div>
+          <div class="depoimento">
+            <div class="foto"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor. <br>
+                - Lorem ipsum
+            </p>
+        </div>
+    </section>
+    <footer>
+        Lorem Ipsum Dolor Sit Amet
+    </footer>
 </body>
 </html>
