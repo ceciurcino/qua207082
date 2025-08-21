@@ -65,11 +65,22 @@
             justify-content: center;
         }
 
-        #carrossel div {
+        #container{
+            width: 880px;
+            overflow: hidden;
+        }
+
+        #carrossel-container {
+            width: 100%;
+            display: flex;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        #carrossel-container div {
             height: 130px;
-            width: 210px;
+            min-width: 200px;
             background-color: gray;
-            margin: 5px;
+            margin: 10px;
         }
 
         #noticias {
@@ -78,6 +89,12 @@
             justify-content: space-between;
         }
 
+        #bt-left, #bt-right{
+            font-size: 300%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
         .noticia {
             width: 270px;
             margin: 30px;
@@ -108,18 +125,15 @@
         }
 
         .depoimento {
-            width: 50%;
             padding: 30px;
-            display: flex;
-            align-items: center;
         }
 
         .foto {
             background-color: gray;
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             float: left;
-            margin: 15px;
+            margin-right: 15px;
         }
 
         footer {
@@ -145,15 +159,17 @@
             margin: auto;
         }
     </style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
      <header>
         <h1>Logo</h1>
         <nav>
-            <a href="#">A</a>
-            <a href="#">B</a>
-            <a href="#">C</a>
-            <a href="#">D</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
         </nav>
     </header>
     <section id="principal">
@@ -171,10 +187,21 @@
     </section>
     <hr>
     <section id="carrossel">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="bt-left" onclick="carrossel(-1)">
+            <i class="fa-solid fa-angle-left"></i></div>
+        <div id="container">
+            <div id="carrossel-container">
+                <div class="img">1</div>
+                <div class="img">2</div>
+                <div class="img">3</div>
+                <div class="img">4</div>
+                <div class="img">5</div>
+                <div class="img">6</div>
+            </div>
+        </div>
+        <div id="bt-right" onclick="carrossel(1)">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
     </section>
     <hr>
     <section id="noticias">
@@ -227,5 +254,16 @@
     <footer>
         Lorem Ipsum Dolor Sit Amet
     </footer>
+    <script>
+        const imgs = document.getElementById("carrossel-container");
+        const img = document.querySelectorAll("#carrossel-container div");
+        let idx = 0;
+        function carrossel(i) {
+            idx += i;
+            if(idx < 0) idx = 0;
+            if(idx >= img.length-4) idx = img.length-4;
+            imgs.style.transform = `translateX(${-idx * 220}px)`;
+        }
+    </script>
 </body>
 </html>
