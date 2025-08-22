@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTILO+ALMA&reg;</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            border: none;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid  white;
+            align-items: center;
+            background-color: #0b132bff;
+            
+        }
+
+        header h1 {
+            text-shadow: 2px 2px 10px #db5a42ff;
+            color: white ;
+
+        }
+
+        nav a {
+            background-color: #0b132bff;
+            color: white;
+            padding: 10px 15px;
+            margin: 0px 2px;
+        }
+
+        #principal {
+            background-color: #0b132bff;
+            text-align: center;
+            display: flex;
+        }
+
+        #principal h2{
+            padding: 45px 10px;
+            text-transform: uppercase;
+            color: white;
+            font-size: 40px;
+        }
+
+        #principal p{
+            margin: auto;
+            color: white;
+            font-size: 20px;
+        }
+
+        #principal button{
+            padding: 10px 15px;
+            margin: 40px auto;
+            display: flex;
+        }
+
+        #principal img{
+            width: 380px;
+            height: 380px;
+            padding: 10px;
+        }
+
+        #lista {
+           background-color: #0b132bff;   
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #lista .caixa{
+            background-color: #0b132bff;
+            width: 250px;
+            padding: 20px;
+            margin: 0px 20px;            
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        #cadastro{
+            text-align: center;
+            background-color: #db5a42ff;
+            padding: 10px;
+        }
+
+        #cadastro *{
+            padding: 10px;
+        }
+
+        footer{
+            background-color: #0b132bff;
+            color: white;
+            text-align: end;
+        }
+
+        body{
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #conteiner{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #title-produto {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .roupa img{
+            width: 200px;
+        }
+
+        #cadastro p {
+            color: white;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="conteiner">
+    <div id="grupo01">
+    <header>
+        <h1>ESTILO + ALMA</h1>
+        <nav>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </nav>
+    </header>
+    <section id="principal">
+        <h2>Coleção Primavera 2025</h2>
+        <p>Estilo urbano para todas as ocasiões.</p>
+        <button>Comprar Agora</button>
+        <img src="imgprincipal.jpg" alt="coleção-primavera">
+    </section>
+    <section id="lista">
+        <div id="title-produto">
+        <h2>PRODUTOS EM DESTAQUE</h2>
+        </div>
+        <div class="caixa">
+            <div class="roupa"><img src="img1.jpg" alt="roupa1">
+                Talota T-Shirt<br>
+                R$129,00
+            </div>
+            <div class="roupa"><img src="img2.jpg" alt="roupa2">
+                Houdie<br>
+                R$193,00
+            </div>
+            <div class="roupa"><img src="img3.jpg" alt="roupa3">
+                Crop T-Shirt<br>
+                R$59,00
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <div id="grupo02">
+
+    <section id="cadastro">
+       <p> Cadastre-se e ganhe 10% de desconto na primeira compra!</p>
+       <form action="">
+        <label for="email">Digite seu email:</label>
+        <input type="email" id="email">
+      
+       </form>
+    </section>
+    <footer>
+        &copy; 2025 ESTILO + ALMA - Todos os direitos reservados.
+    </footer>
+
+    </div> 
+    </div>
+
+</body>
+</html>
