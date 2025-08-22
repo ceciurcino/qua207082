@@ -22,8 +22,9 @@
         }
 
         header h1 {
-            text-shadow: 2px 2px 10px #db5a42ff;
+            text-shadow: 2px 2px 10px rgb(206, 55, 29);
             color: white ;
+            padding-left: 10px;
 
         }
 
@@ -35,97 +36,128 @@
         }
 
         #principal {
-            background-color: #0b132bff;
-            text-align: center;
-            display: flex;
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          background-color: #0b132bff;
+          flex-wrap: wrap;
         }
 
-        #principal h2{
-            padding: 45px 10px;
-            text-transform: uppercase;
+        #main-text {
+            flex: 1 1 300px;
             color: white;
-            font-size: 40px;
         }
 
-        #principal p{
-            margin: auto;
-            color: white;
+        #main-text h1 {
+            font-size: 70px;
+        }
+
+        #main-text p {
             font-size: 20px;
         }
 
-        #principal button{
-            padding: 10px 15px;
-            margin: 40px auto;
-            display: flex;
+        #main-text button {
+            background-color: rgb(206, 55, 29);
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            margin-top: 16px;   
+            font-weight: bold; 
+            border-radius: 5px;
         }
 
-        #principal img{
-            width: 380px;
-            height: 380px;
-            padding: 10px;
+        .image img {
+            max-width: 500px;
         }
 
-        #lista {
-           background-color: #0b132bff;   
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        #lista .caixa{
+        #produtos {
+            padding: 30px;
             background-color: #0b132bff;
-            width: 250px;
-            padding: 20px;
-            margin: 0px 20px;            
+        }
+
+        #produtos h2 {
             text-align: center;
             color: white;
+            margin-bottom: 20px;
+        }
+
+        #produtos-container {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
         }
-        
-        #cadastro{
+
+        .roupa{
+          padding: 15px;
+          max-width: 250px;
+          text-align: center;
+        }
+
+        .roupa img {
+            max-width: 100%;
+        }
+
+        .roupa h3 {
+            margin: 8px 0px;
+            color: white;
+        }
+
+        .roupa p {
+            color: white;
+        }
+
+        .roupa button {
+            background-color: #0b132bff;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #0b132bff;
+        }
+        #cadastro {
             text-align: center;
-            background-color: #db5a42ff;
+            background-color: rgb(206, 55, 29);
             padding: 10px;
         }
 
-        #cadastro *{
+        #cadastro * {
             padding: 10px;
         }
 
-        footer{
+        footer {
             background-color: #0b132bff;
             color: white;
             text-align: end;
         }
 
-        body{
+        body {
             max-width: 1000px;
             margin: auto;
         }
 
-        #conteiner{
+        #conteiner {
             display: flex;
             height: 100vh;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        #title-produto {
-            color: white;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 20px;
-        }
-        .roupa img{
-            width: 200px;
-        }
 
         #cadastro p {
             color: white;
             font-size: 30px;
             padding-top: 20px;
+        }
+
+         hr {
+            border: 1px solid #c2c2c2;
         }
     </style>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
@@ -143,27 +175,33 @@
         </nav>
     </header>
     <section id="principal">
-        <h2>Coleção Primavera 2025</h2>
+        <div id="main-text">
+        <h1>Coleção<br><i>Alma de Rua</i></h1>
         <p>Estilo urbano para todas as ocasiões.</p>
-        <button>Comprar Agora</button>
-        <img src="imgprincipal.jpg" alt="coleção-primavera">
-    </section>
-    <section id="lista">
-        <div id="title-produto">
-        <h2>PRODUTOS EM DESTAQUE</h2>
+        <button>Compre Agora</button>
         </div>
-        <div class="caixa">
-            <div class="roupa"><img src="img1.jpg" alt="roupa1">
-                Talota T-Shirt<br>
-                R$129,00
+        <div class="image">
+          <img src="imgprincipal.jpg" alt="modelo-streetwear">
+        </div>
+    </section>
+    <hr>
+    <section id="produtos">
+        <h2>PRODUTOS EM DESTAQUE</h2>
+        <div id="produtos-container">
+            <div class="roupa"><img src="img1.jpg" alt="Camisa Oversize">
+                <h3>Talota T-Shirt</h3>
+                <p>R$129,00</p>
+                <button>Comprar</button>
             </div>
-            <div class="roupa"><img src="img2.jpg" alt="roupa2">
-                Houdie<br>
-                R$193,00
+            <div class="roupa"><img src="img2.jpg" alt="Hoodie reflex">
+                <h3>Houdie</h3>
+                <p>R$193,00</p>
+                <button>Comprar</button>
             </div>
-            <div class="roupa"><img src="img3.jpg" alt="roupa3">
-                Crop T-Shirt<br>
-                R$59,00
+            <div class="roupa"><img src="img3.jpg" alt="Camiseta">
+                <h3>Crop T-Shirt</h3>
+                <p>R$59,00</p>
+                <button>Comprar</button>
             </div>
         </div>
     </section>
@@ -180,7 +218,7 @@
        </form>
     </section>
     <footer>
-        &copy; 2025 ESTILO + ALMA - Todos os direitos reservados.
+        &copy; 2025 Estilo + Alma - Todos os direitos reservados.
     </footer>
 
     </div> 
