@@ -12,20 +12,20 @@
             border: none;
         }
 
+        /* ===== HEADER ===== */
+
         header{
             display: flex;
             justify-content: space-between;
             border: 1px solid  white;
             align-items: center;
-            background-color: #0b132bff;
-            
+            background-color: #0b132bff;   
         }
 
         header h1 {
             text-shadow: 2px 2px 10px rgb(206, 55, 29);
             color: white ;
             padding-left: 10px;
-
         }
 
         nav a {
@@ -34,6 +34,12 @@
             padding: 10px 15px;
             margin: 0px 2px;
         }
+
+        nav a:hover {
+            color: rgb(206, 55, 29);
+        }
+
+        /* ===== MAIN ===== */
 
         #principal {
           display: flex;
@@ -49,11 +55,12 @@
         }
 
         #main-text h1 {
-            font-size: 70px;
+            font-size: 48px;
         }
 
         #main-text p {
             font-size: 20px;
+            margin-bottom: 20px;
         }
 
         #main-text button {
@@ -64,21 +71,33 @@
             margin-top: 16px;   
             font-weight: bold; 
             border-radius: 5px;
+            transition: all 0.3s ease;
         }
+        
+        #main-text button:hover {
+           background-color: white;
+           color: #0b132b;
+        }
+
+        /* Imagem principal */
 
         .image img {
-            max-width: 500px;
+            max-width: 480px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
         }
 
+        /* ===== PRODUTOS ===== */
+        
         #produtos {
-            padding: 30px;
+            padding: 50px 20px;
             background-color: #0b132bff;
         }
 
         #produtos h2 {
             text-align: center;
             color: white;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         #produtos-container {
@@ -89,47 +108,96 @@
         }
 
         .roupa{
-          padding: 15px;
-          max-width: 250px;
-          text-align: center;
+         border-radius: 12px;
+         padding: 20px;
+         max-width: 250px;
+         text-align: center;
+         box-shadow: 0px 6px 15px rgba(0,0,0,0.4);
+         transition: transform 0.3s ease;
         }
+
+        .roupa:hover {
+        transform: translateY(-6px);
+        }
+
 
         .roupa img {
             max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 12px;
         }
 
         .roupa h3 {
-            margin: 8px 0px;
             color: white;
+            margin-bottom: 6px;
+            font-size: 20px;
         }
 
         .roupa p {
             color: white;
+            margin-bottom: 10px;
         }
 
         .roupa button {
             background-color: #0b132bff;
             color: white;
             border: 2px solid white;
-            border-radius: 5px;
-            padding: 10px 16px;
+            border-radius: 6px;
+            padding: 10px 18px;
+            font-weight: bold;
             cursor: pointer;
             margin-top: 10px;
+            transition: all 0.3s ease;
         }
 
         button:hover {
             background-color: white;
             color: #0b132bff;
+           
         }
+         /* ===== CADASTRO ===== */
+
         #cadastro {
             text-align: center;
             background-color: rgb(206, 55, 29);
-            padding: 10px;
+            padding: 40px;
         }
 
-        #cadastro * {
-            padding: 10px;
+        #cadastro p {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 20px;
         }
+
+        #cadastro input[type=email] {
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        width: 280px;
+        font-size: 1rem;
+        margin-right: 10px;
+        }
+
+        #cadastro input:focus {
+        outline: 2px solid white;
+        }
+
+        #cadastro button {
+        padding: 12px 24px;
+        border-radius: 8px;
+        background-color: white;
+        color: #0b132b;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        #cadastro button:hover {
+        background-color: #0b132b;
+        color: white;
+        }
+
+        /* ===== FOOTER ===== */
 
         footer {
             background-color: #0b132bff;
@@ -138,6 +206,7 @@
         }
 
         body {
+            font-family: 'Poppins', sans-serif;
             max-width: 1000px;
             margin: auto;
         }
@@ -149,15 +218,22 @@
             justify-content: space-between;
         }
 
-
-        #cadastro p {
-            color: white;
-            font-size: 30px;
-            padding-top: 20px;
-        }
-
          hr {
             border: 1px solid #c2c2c2;
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        
+        @media (max-width: 768px) {
+            #main-text h1 {
+                font-size: 2.2rem;
+            }
+            .image img {
+                max-width: 320px;
+            }
+            nav a {
+                font-size: 1rem;
+            }
         }
     </style>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
@@ -214,7 +290,7 @@
        <form action="">
         <label for="email">Digite seu email:</label>
         <input type="email" id="email">
-      
+        <button type="submit">Enviar</button>
        </form>
     </section>
     <footer>
