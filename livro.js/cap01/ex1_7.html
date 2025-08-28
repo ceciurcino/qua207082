@@ -3,7 +3,5 @@
     const jantar = Number(prompt("Valor do Jantar: R$"))
     const taxa = jantar * 0.1
     const total = jantar + taxa
-    alert(`Valor do jantar: R$${jantar}`)
-    alert(`Taxa do Garçom: R$${taxa}`) 
-    alert(`Total a pagar: R$${total}`)
+    alert(`Valor do jantar: R$${jantar.toFixed(2)}\nTaxa do Garçom: R$${taxa.toFixed(2)}\n Total a pagar: R$${total.toFixed(2)}`)
 </script>
