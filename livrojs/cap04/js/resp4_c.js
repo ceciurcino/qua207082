@@ -15,18 +15,18 @@ frm.addEventListener('submit', (e) => {
         valorTotal = valor * tempo
         troco = valor - 1.00
         resp1.innerText = `Tempo: ${tempo}min`
-        resp2.innerText = `Troco: ${troco} `
+        resp2.innerText = `Troco: ${troco.toFixed(2)} `
     } else if (valor >= 1.75 && valor < 3.00) {
         tempo = 60
         valorTotal = valor * tempo
         troco = valor - 1.75
         resp1.innerText = `Tempo: ${tempo}min`
-        resp2.innerText = `Troco: ${troco}`
+        resp2.innerText = `Troco: ${troco.toFixed(2)}`
     } else if (valor >=3) {
         tempo = 120
         valorTotal = valor * tempo
         troco = valor - 3.00
         resp1.innerText = `Tempo: ${tempo}`
-        resp2.innerText = `Troco: ${troco}`
+        resp2.innerText = `Troco: ${troco.toFixed(2)}`
     }
 })
