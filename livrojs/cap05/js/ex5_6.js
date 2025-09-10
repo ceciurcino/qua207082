@@ -4,13 +4,15 @@ const resp = document.querySelector('h3')
 frm.addEventListener('submit', (e) => {
     e.preventDefault()
     const numero = Number(frm.inNumero.value)
-    let numeroDivisores = 0 // declara e inicializa contador
-    for(let i = 1; i <= numero; i++){  // percorre todos os possíveis divisores de numero
-        if(numero % i == 0){ // verifica se i (1,2,3...) é divisor do numero
-            numeroDivisores++ // se é, incrementa contador
+    let primo = true // flag
+    // percorre possíveis divisores ímpares iniciando do 3 até a metade do num.
+    for (let i = 3; i <= numero / 2; i = i + 2) {
+        if (numero % i == 0) { // verifica se i (3,5,7...) é divisor do numero
+            primo = false // mudar a flag
+            break // sair do loop
         }
     }
-    if(numeroDivisores == 2){
+    if ((numero <= 3 || numero % 2 != 0 ) && primo) {
         resp.innerText = `${numero} é primo`
     } else {
         resp.innerText = `${numero} NÃO é primo`
