@@ -8,7 +8,7 @@ frm.addEventListener("submit", (e) => {
     let saida = ""
     for(let i = 1; i <= numero; i++){
         saida += fruta
-        if(i < numero) {
+        if(i < numero) { // só adiciona * se não for o último
             saida += "*"
         }
      }
