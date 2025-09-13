@@ -4,22 +4,22 @@ const resp2 = document.querySelector('#outResp2')
 
 frm.addEventListener('submit', (e) => {
     e.preventDefault()
-    const numero = Number(frm.inNumero.value)
-    let divisores = ""
-    let soma = 0
+    const num = Number(frm.inNumero.value)
+    let divisores = `Divisores do ${num}: 1`
+    let soma = 1
 
-    for(let i = 1; i < numero; i++){
-        if(numero % i === 0){
+    for(let i = 2; i <= num/2; i++){
+        if(num % i === 0){
          soma += i
-         divisores += i + ","
+         divisores += "," + i 
         }
     }
 
-    resp1.innerText = `Divisores do ${numero}: ${divisores} (Soma: ${soma})`
+    resp1.innerText = `Divisores do ${num}: ${divisores} (Soma: ${soma})`
 
-    if(soma === numero){
-        resp2.innerText = `${numero} É um Número Perfeito`
+    if(soma === num){
+        resp2.innerText = `${num} É um Número Perfeito`
     } else {
-        resp2.innerText = `${numero} não é um Número Perfeito`
+        resp2.innerText = `${num} não é um Número Perfeito`
     }
 })
