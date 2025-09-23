@@ -1,6 +1,13 @@
 const frm = document.querySelector('form')
 const resp = document.querySelector('pre')
-const clubes = ['Flamengo', 'Corinthias', 'Palmeiras', 'Santos'] // vetor global para armazenar os clubes
+
+const clubes = [] // vetor global para armazenar os clubes
+clubes[0] = "Flamengo"
+clubes[1] = "Fluminense"
+clubes[2] = "Botafoto"
+clubes[3] = "Vasco"
+clubes[4] = "Santos"
+clubes[5] = "São Paulo"
 
 frm.addEventListener('submit', (e) =>{
     e.preventDefault()
