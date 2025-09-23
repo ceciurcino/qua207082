@@ -37,7 +37,7 @@ frm.addEventListener('submit', (e) =>{
 
   frm.btListar.dispatchEvent(new Event("click"))
 
-  
+
   // Adiciona um Event Listener ao botão "Montar Tabela de Jogos"
   frm.btMontar.addEventListener('click', () => {
     if (clubes.length === 0 || clubes.length % 2 !== 0) {
@@ -45,10 +45,10 @@ frm.addEventListener('submit', (e) =>{
         frm.inClube.focus()
         return;
     }
+    
     const jogos = [];
-    const meio = clubes.length / 2
 
-    for (let i = 0; i < meio; i++) {
+    for (let i = 0; i < clubes.length / 2; i++) {
         const jogo = `${clubes[i]} x ${clubes[clubes.length - 1 - i]}`
         jogos.push(jogo);
     }
