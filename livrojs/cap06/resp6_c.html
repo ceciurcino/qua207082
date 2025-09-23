@@ -9,9 +9,21 @@
 </head>
 <body>
      <img src="img/exerc.jpg" alt="Impressora" class="normal">
-     <h1></h1>
+     <h1>Programa Concurso</h1>
      <form>
-
+        <p>
+            Candidato:
+            <input type="text" id="inCandidato" required autofocus>
+        </p>
+        <p>
+            Nº Acertos:
+            <input type="number" id="inAcertos" min="0" required>
+            <input type="submit" value="Adicionar">
+        </p>
+        <input type="button" value="Listar Todos" id="btListar">
+        <input type="button" value="Aprovados 2ª etapa" id="btAprovados">
      </form>
+     <pre></pre>
+     <script src="js/resp6_c.js"></script>
 </body>
 </html>
