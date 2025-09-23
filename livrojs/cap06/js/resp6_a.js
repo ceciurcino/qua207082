@@ -35,6 +35,9 @@ frm.addEventListener('submit', (e) =>{
     
   })
 
+  frm.btListar.dispatchEvent(new Event("click"))
+
+  
   // Adiciona um Event Listener ao botão "Montar Tabela de Jogos"
   frm.btMontar.addEventListener('click', () => {
     if (clubes.length === 0 || clubes.length % 2 !== 0) {
