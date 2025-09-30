@@ -38,7 +38,7 @@ frm.btDecripto.addEventListener("click", () =>{
     const pares = criptografia.substring(0, tamPares)
     const impares = criptografia.substring(tamPares)
 
-    // Cria um array vazio
+    // Cria um array vazio para gravar a mensagem
     let msgDecripto = []
 
     for(let i = 0; i < tamPares; i++) {
