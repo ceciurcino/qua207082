@@ -7,7 +7,7 @@ frm.addEventListener("submit", (e) => {
     const idade = Number(frm.inIdade.value)
     const tracos = retornarTracos(nome)
     const categoria = categorizarAluno(idade)
-    resp.innerText = nome + "\n" + tracos + "\n" + categoria
+    resp.innerText = nome + "\n" + tracos + "\n" + "Categoria: " + categoria
 
 })
 // função para adicionar espaços ou - abaixo do nome
