@@ -28,7 +28,7 @@ function retornarTracos(nome) {
 }
 // função para selecionar a categoria do aluno
 function categorizarAluno(idade) {
-    if (idade >= 0 && idade <= 12) {
+    if (idade <= 12) {
         return "Infantil"
     } else if (idade <= 18) {
         return "Juvenil"
