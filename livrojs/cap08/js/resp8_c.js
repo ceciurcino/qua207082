@@ -26,7 +26,7 @@ frm.addEventListener("submit", (e) => {
     
     if(frm.rbSim.checked){
         // verifica qual convenio está marcado
-        if(convenio == Amigo) {
+        if(convenio == "Amigo") {
             taxa = 0.20 // 20% de desconto
         } else {
             taxa = 0.50 // 50% de desconto
@@ -36,7 +36,7 @@ frm.addEventListener("submit", (e) => {
     const valorDesconto = calcularDesconto(valor,taxa)
     const valorFinal = valor - valorDesconto
     resp1.innerText = `Desconto R$: ${valorDesconto}`
-    resp2.innerText = `A Pagar R$: ${valorFinal}`
+    resp2.innerText = `A Pagar R$: ${valorFinal.toFixed(2)}`
 })
 
 // função para calcular o desconto
