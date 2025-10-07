@@ -30,7 +30,7 @@ function retornarTracos(nome) {
 function categorizarAluno(idade) {
     if (idade <= 12) {
         return "Infantil"
-    } else if (idade <= 18) {
+    } else if (idade <= 17) {
         return "Juvenil"
     } else {
         return "Adulto"
