@@ -34,6 +34,12 @@ frm.btApagar.addEventListener("click", () => {
 
 })
 
+const cores = {
+    "Em Fila":"bg-secondary-subtle",
+    "Iniciado":"bg-primary-subtle",
+    "Concluído":"bg-danger-subtle"
+}
+
 function atualizarTabela() {
     limpar()
     localStorage.setItem("lsItem", JSON.stringify(lsItem))
@@ -44,7 +50,7 @@ function atualizarTabela() {
             tbody.innerHTML +=
                 `<tr onclick="prepararEdicao(${cont})" >
                 <td>${i.item}</td>
-                <td>${i.status}</td>
+                <td class="${cores[i.status]}">${i.status}</td>
             </tr>`
         }
         cont++
