@@ -92,5 +92,9 @@ frm.addEventListener("submit", (e) => {
     let msg = "Desejo fazer os seguinte pedido!\n"
     msg += pedido
     msg += `Att: ${nome}`
-    alert(msg)
+    if(confirm("Deseja enviar essa mensagem?\n"+msg)) {
+        msg = encodeURI(msg)
+        const link = `https://api.whatsapp.com/send?phone=5561982567849&text=${msg}`
+        window.open(link, '_blank') 
+    }
 })
