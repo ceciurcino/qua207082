@@ -23,6 +23,18 @@ carregarSelect(frm.inEstado, "estados")
 
 frm.inEstado.addEventListener("change",() => {
     const uf = frm.inEstado.value
-    frm.inMunicipio.innerHTML = ""
+    frm.inMunicipio.innerHTML = `<option value="">Selecione</option>`
     carregarSelect(frm.inMunicipio, `estados/${uf}/municipios`)
+})
+
+frm.inRegiao.addEventListener("change",() => {
+    const regiao = frm.inRegiao.value
+    frm.inEstado.innerHTML = `<option value="">Seleciona</option>`
+    frm.inMunicipio.innerHTML = ""
+    if(regiao == "") {
+        carregarSelect(frm.inEstado, `estados`)
+    }else{
+        carregarSelect(frm.inEstado, `regioes/${regiao}/estados`)
+    }
+    
 })
