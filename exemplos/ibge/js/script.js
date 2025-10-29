@@ -29,7 +29,7 @@ frm.inEstado.addEventListener("change",() => {
 
 frm.inRegiao.addEventListener("change",() => {
     const regiao = frm.inRegiao.value
-    frm.inEstado.innerHTML = `<option value="">Seleciona</option>`
+    frm.inEstado.innerHTML = `<option value="">Selecione</option>`
     frm.inMunicipio.innerHTML = ""
     if(regiao == "") {
         carregarSelect(frm.inEstado, `estados`)
