@@ -24,9 +24,6 @@ h1 {
     color: #F5F5F5
 }
 
-
-
-
 #btCompras {
     background-color: #FF0080;
     border-radius: 100%;
@@ -56,8 +53,8 @@ h1 {
 #btCompras #qt {
     background-color: #FFD700;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
     border-radius: 100%;
     color: #fff;
     padding: 0px 5px;
@@ -192,7 +189,7 @@ form input[value]:hover {
 
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 10px;
+        padding: 20px;
         width: 390px;
     }
 
@@ -201,13 +198,12 @@ form input[value]:hover {
     }
 
     .produto {
-        width: 150px;
-       
+        width: 150px; 
     }
 
-    .produto img {
+    .produto img{
         width: 150px;
-        height: 150px;
+        height: 200px;
     }
 
     .produto>div>img {
@@ -221,6 +217,10 @@ form input[value]:hover {
 
     form #inNome{
         width: 250px;
+    }
+
+    #topo {
+        padding: 20px 0px 60px 0px;
     }
 
 }
