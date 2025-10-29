@@ -48,7 +48,7 @@ h1 {
 }
 
 #btCompras img {
-    height: 150%;
+    height: 140%;
     filter: invert(1);
 
 }
@@ -202,6 +202,7 @@ form input[value]:hover {
 
     .produto {
         width: 150px;
+       
     }
 
     .produto img {
