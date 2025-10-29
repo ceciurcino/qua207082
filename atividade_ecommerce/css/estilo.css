@@ -7,8 +7,7 @@
 
 .container {
     width: 785px;
-    /* height: 100vh; */
-    background-color: #efedec;
+    background-color: #1A1A1A;
     margin: auto;
     padding: 50px;
 }
@@ -21,15 +20,17 @@ h1 {
 
 .esquerdo p {
     font-family: "Quattrocento", serif;
+    color: #F5F5F5
 }
 
-h1,
-p {
-    color: #3b0a0a;
+h1{
+    color: #F5F5F5;
 }
 
-#btVela {
-    background-color: #3b0a0a;
+
+
+#btCompras {
+    background-color: #FF0080;
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -48,16 +49,17 @@ p {
     float: right;
 }
 
-#btVela img {
-    height: 80%;
+#btCompras img {
+    height: 150%;
     filter: invert(1);
+
 }
 
-#btVela #qt {
-    background-color: #aca2a2;
+#btCompras #qt {
+    background-color: #FFD700;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     border-radius: 100%;
     color: #fff;
     padding: 0px 5px;
@@ -69,7 +71,6 @@ p {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
-
 }
 
 .produto {
@@ -98,11 +99,11 @@ p {
 }
 
 .produto:hover {
-    box-shadow: 0px 0px 7px 0px #3b0a0a;
+    box-shadow: 0px 0px 10px 0px #FF0080;
 }
 
 .marcado {
-    background-color: #3b0a0a;
+    background-color: #FF0080;
 }
 
 .marcado p {
@@ -146,7 +147,7 @@ p {
 }
 
 td {
-    background-color: #3b0a0a;
+    background-color: #FF1493;
     color: white;
     padding: 5px;
     text-align: center;
@@ -154,7 +155,7 @@ td {
 
 td[onclick]:hover {
     cursor: pointer;
-    background-color: #775858;
+    background-color: #FFD700;
 }
 
 form {
@@ -162,7 +163,7 @@ form {
 }
 
 form label {
-    color: #3b0a0a;
+    color: #FF1493;
     font-family: "Trocchi", serif;
 }
 
@@ -173,11 +174,11 @@ form input {
 form #inNome {
     padding: 5px;
     width: 300px;
-    border: #3b0a0a solid 1px;
+    border: #FF1493 solid 1px;
 }
 
 form input[value] {
-    background-color: #3b0a0a;
+    background-color: #FF1493;
     padding: 5px 10px;
     color: white;
     font-size: large;

@@ -28,7 +28,7 @@ function atualizarQt() {
     document.querySelector("#qt").innerText = qt.length > 0 ? qt.length : ""
 }
 
-document.querySelector("#btVela").addEventListener("click", carrinho)
+document.querySelector("#btCompras").addEventListener("click", carrinho)
 
 function carrinho() {
     const qt = document.querySelector("#qt").innerText
@@ -89,12 +89,12 @@ const frm = document.querySelector("form")
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
     const nome = frm.inNome.value
-    let msg = "Desejo fazer os seguinte pedido!\n"
+    let msg = "Desejo fazer o seguinte pedido!\n"
     msg += pedido
-    msg += `Att: ${nome}`
+    msg += `\nAtt: ${nome}`
     if(confirm("Deseja enviar essa mensagem?\n"+msg)) {
         msg = encodeURI(msg)
-        const link = `https://api.whatsapp.com/send?phone=5561982567849&text=${msg}`
+        const link = `https://api.whatsapp.com/send?phone=556182567849&text=${msg}`
         window.open(link, '_blank') 
     }
 })
